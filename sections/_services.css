@@ -1,0 +1,59 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+		
+.services{
+
+	padding-top: 50px;
+	padding-bottom: 70px;
+	background-color: #F6F6F6;
+
+	.services-title,.services-sub{
+		text-align: start;
+	}
+	.services-btn{
+		text-align: end;
+
+		@media (max-width: 575.98px){
+		text-align: start;
+		}
+		button{
+			padding: 10px 50px;
+		}
+	}
+
+}
+.services-content {
+	width: 100%;
+	height: 100%;
+
+ @media (max-width: 575.98px){
+		text-align: start;
+	}
+			 
+	h2{
+		color: #dca445;
+		text-align: start;
+	}
+}
+.col{
+	a{
+		text-decoration: none;
+		color: #666666;
+	}
+		a:hover{
+			color: #dca445;
+		}
+		p{
+		margin-top: revert;
+	}
+
+}
+.services-sub{
+		font-size: 1.125rem;
+		color:  #666666;
+	}
+.service-names{
+	padding-top: 10px;
+}
+

@@ -1,0 +1,93 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.contact{
+
+	background-color: #fff;
+	padding: 80px 30px;
+
+	@media (max-width: 575.98px){
+		padding-top: 65px;
+		}
+
+}
+.contact-map{
+		padding-right: 30px;
+
+		@media (max-width: 575.98px){
+		padding-right: 0;
+		}
+		.contact-icon{
+		font-size: 40px;
+		} 
+		iframe{
+			width:100%;
+		}
+		.border-right {
+		    border-right: 0.3rem solid #dee2e6;
+		    height: 100%;
+		}
+}
+ 
+
+
+.contact-form{
+	padding-left: 80px;
+
+	@media (max-width: 575.98px){
+		padding-top: 30px;
+		padding-left: 0;
+
+	}
+	.form label{
+		color:  #666666;
+		font-size: 1.125rem;
+	}
+	.form input,textarea{
+		background: #f7f7f7;
+	}
+	button{
+		border-radius: 5px;
+		padding: 15px 45px;
+	}
+
+}
+
+
+ // ##### CONTACT FILE ################
+
+.contact-map-contact{
+	margin-top: 60px;
+	padding-bottom: 30px;
+	
+	iframe{
+		width: 100%;
+	}
+}
+.contact-card{
+	background: #F6F6F6;
+	padding: 80px 20px;
+	border:none;
+	height: 300px;
+
+
+	.icon-holder{
+
+		text-align:center;
+
+		address{
+			font-size:1rem;
+		}
+
+		i{
+			font-size: 3rem;
+			color: #dca445;
+		}
+		.icon-name{
+			color: #dca445;
+			font-weight: bolder;
+		}
+	}
+}
+ 

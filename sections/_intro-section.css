@@ -1,0 +1,103 @@
+@use '../custom' as *;
+
+
+.intro-carousel{
+
+	.added-padding p{
+		@media (min-width: 414px) and (max-width:575px) { 
+			padding-bottom:20px;
+		}
+	}
+
+
+    //  USED MARGIN BOTTOM FOR FEATURE CONTAINER (SMALL DEVICES)
+	@media (max-width: 575.98px){
+			position:static;
+			margin-bottom: -110px;
+			padding-bottom: 0;
+		}
+
+	//  USED MARGIN BOTTOM FOR FEATURE CONTAINER (LARGE DEVICES)
+	@include media-breakpoint-up(lg){
+		 margin-bottom:-23px;
+		}
+
+	.carousel-caption{
+
+			@media (max-width: 575.98px){
+				background-color:rgba(255, 255, 255, 0.7);
+				position: inherit;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+		.intro-title{
+			font-size: 3.5rem;
+
+			@media (max-width: 575.98px){
+				font-size: 1.5rem;
+			}
+		}
+		.intro-sub {
+
+			@media (max-width: 767.98px){
+				font-size: 1rem;
+			}
+			@media (min-width: 768px){
+				font-size: 1.5rem;
+			}
+			@media (min-width: 992px) {
+				font-size: 1.5rem;
+			}
+		}
+
+	}
+}
+	.intro-inner{
+	    z-index: -1;
+
+		@media (min-width: 375px) and (max-width: 413px) { 
+	    		position:static;	
+				margin-top: 132%;
+			}
+
+		@media (min-width: 414px) and (max-width:575px) { 
+			position: static;
+			margin-top: 97%;
+		}
+		 @media (min-width: 1200px){
+	    		margin-top: -19%;
+			}
+	}
+
+		.l-button, .r-button{
+			border: 4px solid #f8f8ff;
+		    position: relative;
+		    width: 55px;
+		    height: 55px;		    
+		    transform: translate(16px, -95px);
+
+			@media (min-width: 768px) { 
+				margin-top: -44px;
+			 	}
+		 	}
+		 .l-button{
+		 	 @media (min-width: 768px) { 
+				top: -45px;
+			 	}
+		 }
+		.r-button{
+			left: 94%;
+	        transform: translate(-50px, -149px);
+
+	        @media (min-width: 768px) { 
+				left: 98%;
+			 	}
+			@media (min-width: 992px) { 
+				left: 98%;
+			 	}
+
+		}
+		
+
+

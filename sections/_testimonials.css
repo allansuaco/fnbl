@@ -1,0 +1,126 @@
+@use '../custom' as *;
+
+
+.testimonials{
+	background-color:  #F6F6F6;
+	padding: 87px 0 122px;
+
+	.carousel-control-next-icon, .carousel-control-prev-icon{
+			filter: invert(1);
+		}
+	.testimonials-title{
+		color:  #dca445;
+		text-align: start;
+	}
+}
+
+.testimonial-carousel{ 
+	.testimonial-indicators{
+		z-index: 1;
+		top:61%;
+		left:6%;
+	
+	}
+
+	@media (max-width: 575.98px){
+		.testimonial-inner{
+			padding-left: 0;
+		}
+	}
+	.testimonial-indicators li {
+	  border: 2px solid rgba(255, 255, 255, 0.5);
+	  height: 50px;
+	  margin-left: 2px;
+	  margin-right: 40px;
+	  opacity: 0.5;
+	  width: 150px;
+	}
+
+	.testimonial-indicator li::after {
+	  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.75);
+	  content: '';
+	  display: block;
+	  height: 1px;
+	  width: 100%;
+	}
+
+	.testimonial-indicator .active {
+	  opacity: 1;
+
+	}
+ 
+	.testimonial-inner{
+		padding-left: 30px;
+
+		@media (max-width: 575.98px){
+			padding-left: 0;
+		}
+	}
+	.testimonial-item{
+		display: flex;
+		
+		@media (max-width: 575.98px){
+			display:block;
+		}
+
+	}
+	.testimonial-img img{
+
+		@media (max-width: 575.98px){
+			order: 1;
+			width: 315px;
+		}
+		@media (max-width: 991.98px){
+			width: 257px;
+		}
+	}
+	.testimonial-text{
+		color: #666666;
+		padding-top: 50px;
+		padding-left: 50px;
+
+			@media (max-width: 575.98px){
+				margin-top: 25px;
+				text-align: center;
+				padding: 20px;
+			}
+		
+		h3{
+			font-size: 1.5rem;
+
+			@media (max-width: 575.98px){
+			padding-bottom: 10px;
+			}
+		}
+		p{
+			padding-top: 5px;
+			font-size: 1.125rem;
+			line-height: 1.6;
+		}
+
+		
+	}
+}
+	 
+		.prev-btn, .next-btn{
+			background-color: #f7f7f7;
+			border: 3px solid #6c757d;
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			left: 10.5%;
+			top: 80.5%;
+			// filter: invert(1); // I just learned this rn by just doing HA HA HA
+			@media (max-width: 575.98px){
+				left:32.5%;
+				top:101.5%;
+			}
+	}
+		.next-btn{
+			left: calc(100% - 82.5%);
+			// filter: invert(1); // I just learned this rn by just doing HA HA HA
+			@media (max-width: 575.98px){
+				left: calc(100% - 45.5%);
+			}
+		}
+		

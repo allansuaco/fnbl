@@ -1,0 +1,15 @@
+
+@use '../custom' as *;
+
+
+body{
+	background-color: #cc8d7b;
+	margin: 0px 20px;
+	font-family: 'Marcellus', serif;
+	line-height: 1.5;
+	font-size: 100%;
+}
+p{
+	color: #666666;
+}
+
